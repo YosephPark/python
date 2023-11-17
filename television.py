@@ -34,8 +34,6 @@ class Television:
                 self.__muted = False
             else:
                 self.__muted = True
-        else:
-            pass
 
     def channel_up(self) -> None:
         '''
@@ -88,4 +86,3 @@ class Television:
             return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {Television.MIN_VOLUME}'
         else:
             return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
-
